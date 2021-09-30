@@ -5,6 +5,7 @@ const Container = styled.div`
     background-image: url(${Fondo});
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     padding: 100px 20px 0px 20px;
     display: flex;

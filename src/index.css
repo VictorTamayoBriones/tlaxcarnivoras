@@ -7,7 +7,7 @@
 body{
   background: #DCF2DE;
   font-family: 'Amiko', sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .visible{
