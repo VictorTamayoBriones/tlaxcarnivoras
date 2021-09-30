@@ -1,7 +1,5 @@
-function App() {
-  return (
-      <h1>Tlaxcarnivoras</h1>
-  );
-}
+import Routes from "./routes";
 
+const App = () => <Routes/>
+ 
 export default App;

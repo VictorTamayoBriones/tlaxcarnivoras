@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet';
 import './index.css';
 import App from './App';
-import favicon from './logo.png';
+import favicon from './images/logo.png';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <>
@@ -12,7 +13,9 @@ ReactDOM.render(
       <title>Tlaxcarnivoras</title>
     </Helmet>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </>,
   document.getElementById('root')
