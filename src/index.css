@@ -12,4 +12,5 @@ body{
 
 .visible{
   visibility: visible !important;
+  animation-duration: 1s;
 }

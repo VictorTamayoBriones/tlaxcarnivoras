@@ -1,8 +1,9 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import Button from '../Buttons';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import "animate.css"
 
 const Navbar = () => {
 
@@ -21,7 +22,7 @@ const Navbar = () => {
                     <svg onClick={()=>setMenu(!menu)} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
-                    <ul className={menu ? 'visible' : ''}>
+                    <ul className={menu ? 'visible animate__animated animate__fadeInRight' : null}>
                         <li><a href="">Contacto</a></li>
                         <li><a href="">Galeria</a></li>
                         <li><Button as={ motion.button } whileHover={{ y: -5, x: 2}} >Log in</Button></li>
@@ -60,6 +61,7 @@ const Nav = styled.nav`
         justify-content: flex-end;
         align-items: center;
         gap: 30px;
+        animation-duration: 0s;
         li{
             width: max-content;
         }
@@ -82,11 +84,12 @@ const Nav = styled.nav`
             position: absolute;
             padding: 12px 8px;
             border-radius: 8px;
-            right: 0;
+            right: 5px;
             top: 50px;
             box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.3);
             z-index: 100;
             visibility: hidden;
+            animation-duration: .5s !important; /* don't forget to set a duration! */
         }
         svg{
             display: block;
@@ -105,5 +108,7 @@ const Toggle = styled.div`
         align-items: flex-end;
     }
 `;
+
+
 
 export default Navbar;
