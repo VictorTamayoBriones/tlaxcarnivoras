@@ -14,4 +14,17 @@ const Button = styled.button`
     }
 `;
 
-export default Button;
+const OutlineBtn = styled.button`
+    background: transparent;
+    border: solid 1px ${(props)=> props.white ?  theme.verdeClaro : theme.verdeOscuro};
+    color: ${(props)=> props.white ? theme.verdeClaro : theme.verdeOscuro};
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    &:hover{
+        cursor: pointer;
+        box-shadow: -5px 3px 8px rgba(0, 0, 0, 0.3);
+    }
+`;
+
+export {Button, OutlineBtn};

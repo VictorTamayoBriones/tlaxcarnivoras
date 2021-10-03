@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Container, Datos } from './styled';
-import Button from '../Buttons';
+import { Button } from '../Buttons';
 import Logo from '../../images/logo.png';
 
 const Hero = () => {

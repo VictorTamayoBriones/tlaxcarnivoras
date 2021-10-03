@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Nav, Toggle } from './styled';
-import Button from '../Buttons';
+import { Button } from '../Buttons';
 import "animate.css"
 
 const Navbar = () => {
