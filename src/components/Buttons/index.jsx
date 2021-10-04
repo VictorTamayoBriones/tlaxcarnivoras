@@ -10,7 +10,11 @@ const Button = styled.button`
     font-size: 18px;
     &:hover{
         cursor: pointer;
+        transition: ease-out .3s ;
         box-shadow: -5px 3px 8px rgba(0, 0, 0, 0.3);
+        background: ${theme.verdeClaro};
+        border: 1px solid ${theme.verdeOscuro};
+        color: ${theme.verdeOscuro};
     }
 `;
 
