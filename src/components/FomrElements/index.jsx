@@ -27,10 +27,10 @@ const ContainerImageForm = styled.div`
     align-items: center;
     padding: 30px 0px;
     img{
-        width: 70%;
+        width: ${(props => props.contacto ? "100%" : "70%" )};
     }
     @media (max-width: 700px){
-        width: 20%;
+        width: ${ (props) => props.contacto ? "35%" : "20%" };
         padding: 8px 0px;
         overflow: hidden;
         img{
@@ -95,15 +95,15 @@ const LoginForm = styled.form`
     box-shadow: 5px 7px 10px rgba(0,0,0,0.3);
     overflow: hidden;
     h2{
-        font-family: 'Creepster', cursive;
+        font-family: ${ (props)=> props.contacto ? "'Amiko', sans-serif" : "'Creepster', cursive" };
+        -webkit-text-stroke: 1px ${theme.verde};
         color: #fff;
         text-align: center;
         font-size: 45px;
         letter-spacing: 3px;
         margin-bottom: 20px;
         @media (max-width: 990px){
-            -webkit-text-stroke: 1px ${theme.verde};
-            font-size: 40px;
+            font-size: ${ (props) => props.contacto ? "30px" : "40px" };
         }
     }
     
@@ -125,4 +125,20 @@ const Input = styled.input`
     }
 `;
 
-export { Container, ContainerInputs, ContainerImageForm, ContainerTwiceParts, ContainerLabelInput, LoginForm, Input };
+const TextArea = styled.textarea`
+    background: ${theme.verdeClaro};
+    border: 1px solid ${theme.verdeMuyOscuro};
+    border-radius: 8px;
+    color: ${theme.verde};
+    padding: 8px 15px;
+    font-size: 15px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 180px;
+    min-height: 100px;
+    &:focus{
+        outline: none;
+    }
+`;
+
+export { Container, ContainerInputs, ContainerImageForm, ContainerTwiceParts, ContainerLabelInput, LoginForm, Input, TextArea };
