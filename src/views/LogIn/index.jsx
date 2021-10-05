@@ -1,4 +1,4 @@
-import { Container, ContainerInputs, ContainerImageForm, ContainerTwiceParts, LoginForm, Input } from '../../components/FomrElements';
+import { Container, ContainerInputs, ContainerLabelInput, ContainerImageForm, ContainerTwiceParts, LoginForm, Input } from '../../components/FomrElements';
 import { useState } from 'react';
 import { Button } from '../../components/Buttons';
 import Logo from '../../images/logo.png';
@@ -19,8 +19,14 @@ const Login = () => {
                         <img src={Logo} alt="Tlaxcarnivoras" title="Tlaxcarnivoras" />
                     </ContainerImageForm>
                     <ContainerInputs>
-                        <Input type="text" name='userName' value={userName} onChange={handleInput} placeholder="User name" ></Input>
-                        <Input type="password" name='userPassword' value={userPassword} onChange={handleInput} placeholder="Password" ></Input>
+                        <ContainerLabelInput>
+                            <Input type="text" name='userName' value={userName} onChange={handleInput} required ></Input>
+                            <span>User name</span>
+                        </ContainerLabelInput>
+                        <ContainerLabelInput>
+                            <Input type="password" name='userPassword' value={userPassword} onChange={handleInput} required ></Input>
+                            <span>Password</span>
+                        </ContainerLabelInput>
                         <Button>Ingresar</Button>
                     </ContainerInputs>
                 </ContainerTwiceParts>

@@ -51,6 +51,40 @@ const ContainerInputs = styled.div`
     }
 `;
 
+const ContainerLabelInput=styled.div`
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    :last-child{
+        margin-bottom: 0;
+    }
+    span{
+        color: ${theme.verde};
+        position: absolute;
+        transition: 0.5s;
+        pointer-events: none;
+        padding: 0px 15px;
+    }
+    input{
+        position: absolute;
+        width: 100%;
+        &:focus~span{
+            transform: translateX(-10px) translateY(-32px);
+            font-size: 16px;
+            color: ${theme.verdeClaro};
+        }
+        &:valid~span{
+            transform: translateX(-10px) translateY(-32px);
+            font-size: 16px;
+            color: ${theme.verdeClaro};
+        }
+    }
+`;
+
 const LoginForm = styled.form`
     width: 70%;
     background: ${theme.verde};
@@ -90,4 +124,4 @@ const Input = styled.input`
     }
 `;
 
-export { Container, ContainerInputs, ContainerImageForm, ContainerTwiceParts, LoginForm, Input };
+export { Container, ContainerInputs, ContainerImageForm, ContainerTwiceParts, ContainerLabelInput, LoginForm, Input };
