@@ -100,6 +100,7 @@ const LoginForm = styled.form`
         text-align: center;
         font-size: 45px;
         letter-spacing: 3px;
+        margin-bottom: 20px;
         @media (max-width: 990px){
             -webkit-text-stroke: 1px ${theme.verde};
             font-size: 40px;
