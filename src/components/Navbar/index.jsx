@@ -22,7 +22,7 @@ const Navbar = () => {
                 </svg>
                 <ul className={menu ? 'visible animate__animated animate__fadeInRight' : null}>
                     <li><Link to="/contacto" >Contacto</Link></li>
-                    <li><Link to="/" >Galeria</Link></li>
+                    <li><Link to="/gallery" >Galeria</Link></li>
                     <li><Button onClick={handleClick} as={ motion.button } whileHover={{ y: -5, x: 2}} name='login' >Log in</Button></li>
                     <li><Button onClick={handleClick} as={ motion.button } whileHover={{ y: -5, x: 2}} secondary name='logup' >Log up</Button></li>
                 </ul>
