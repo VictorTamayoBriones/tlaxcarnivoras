@@ -2,10 +2,26 @@ import { motion } from 'framer-motion';
 import { Container, Datos } from './styled';
 import { Button } from '../Buttons';
 import Logo from '../../images/logo.png';
+import { useState, useEffect, useRef } from 'react';
 
 const Hero = () => {
+
+    const heroRef = useRef(null);
+    const [height, setHeight]=useState(null);
+
+    const getHeight = ()=>{
+        const newHeight = heroRef.current.clientHeight;
+        setHeight(newHeight);
+    }
+
+    const seeMore = ()=> window.scrollTo(0, height);
+
+    useEffect(()=>{
+        getHeight();
+    });
+
     return (
-        <Container>
+        <Container ref={heroRef} >
             <Datos>
                 <h2>Plantas Carnivoras</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -15,7 +31,7 @@ const Hero = () => {
                     laborum ullam magnam? Aspernatur in nemo soluta deleniti 
                     porro nostrum optio. Magnam esse accusantium vel? Quo.
                 </p>
-                <Button as={motion.button} whileHover={{ y: -5, x: 2}} >ver mas</Button>
+                <Button as={motion.button} whileHover={{ y: -5, x: 2}} onClick={seeMore} >ver mas</Button>
             </Datos>
             <motion.img src={Logo} alt="Tlaxcarnivoras" title="Tlaxcarnivoras" 
                 initial={{ x: 1000 }}
