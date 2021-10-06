@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import theme from '../../theme';
-import { animate, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Grid, Row, Column } from '../../components/Grid';
 import Img1 from '../../images/gallery/img1.png';
 import Img2 from '../../images/gallery/img2.png';
@@ -16,30 +16,36 @@ import Img11 from '../../images/gallery/img11.png';
 import Img12 from '../../images/gallery/img12.png';
 
 const Gallery = () => {
+
+    const getRandom = () =>{
+        let delayValue = (Math.random() * 2);
+        return delayValue
+    }
+
     return (
         <Conatiner>
             <h2>Tlaxcarnivoras</h2>
             <Grid>
                 <Row>
                     <Column izquierda >
-                        <motion.img src={Img1} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
-                        <motion.img src={Img2} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
-                        <motion.img src={Img6} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
+                        <motion.img src={Img1} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
+                        <motion.img src={Img2} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
+                        <motion.img src={Img6} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
                     </Column>
                     <Column>
-                        <motion.img src={Img4} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
-                        <motion.img src={Img8} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
-                        <motion.img src={Img5} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
+                        <motion.img src={Img4} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
+                        <motion.img src={Img8} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
+                        <motion.img src={Img5} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
                     </Column>
                     <Column >
-                        <motion.img src={Img7} alt="Tlaxcarnivoras"  initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
-                        <motion.img src={Img10} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
-                        <motion.img src={Img9} alt="Tlaxcarnivoras"  initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
+                        <motion.img src={Img7} alt="Tlaxcarnivoras"  initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
+                        <motion.img src={Img10} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
+                        <motion.img src={Img9} alt="Tlaxcarnivoras"  initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
                     </Column>
                     <Column derecha >
-                        <motion.img src={Img3} alt="Tlaxcarnivoras"  initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
-                        <motion.img src={Img11} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
-                        <motion.img src={Img12} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50 }} />
+                        <motion.img src={Img3} alt="Tlaxcarnivoras"  initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
+                        <motion.img src={Img11} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
+                        <motion.img src={Img12} alt="Tlaxcarnivoras" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 50, delay: getRandom() }} />
                     </Column>
                 </Row>
             </Grid>
