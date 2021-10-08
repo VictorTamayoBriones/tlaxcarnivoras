@@ -8,6 +8,7 @@ const Button = styled.button`
     border-radius: 8px;
     padding: 8px 25px;
     font-size: 18px;
+    z-index: 1;
     &:hover{
         cursor: pointer;
         transition: ease-out .3s ;

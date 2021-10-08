@@ -4,6 +4,7 @@ import Gallery from '../views/Gallery';
 import Home from '../views/Home';
 import Login from '../views/LogIn';
 import Logup from '../views/LogUp';
+import Planta from '../views/Planta';
 
 const Routes = () => {
     return (
@@ -14,6 +15,7 @@ const Routes = () => {
                 <Route path="/logup" component={Logup} />
                 <Route path="/contacto" component={Contacto} />
                 <Route path="/gallery" component={Gallery} />
+                <Route path="/planta:id" component={Planta} />
             </Switch>
         </BrowserRouter>
     );
