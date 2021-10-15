@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.db1a50a3.chunk.css",
+    "main.js": "/static/js/main.359198c2.chunk.js",
+    "main.js.map": "/static/js/main.359198c2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.100c74c2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.100c74c2.js.map",
+    "static/css/2.a1596f27.chunk.css": "/static/css/2.a1596f27.chunk.css",
+    "static/js/2.2d6ceed0.chunk.js": "/static/js/2.2d6ceed0.chunk.js",
+    "static/js/2.2d6ceed0.chunk.js.map": "/static/js/2.2d6ceed0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a1596f27.chunk.css.map": "/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.db1a50a3.chunk.css.map": "/static/css/main.db1a50a3.chunk.css.map",
+    "static/js/2.2d6ceed0.chunk.js.LICENSE.txt": "/static/js/2.2d6ceed0.chunk.js.LICENSE.txt",
+    "static/media/bgLogin.0bdb12f7.svg": "/static/media/bgLogin.0bdb12f7.svg",
+    "static/media/contacto.95551b78.svg": "/static/media/contacto.95551b78.svg",
+    "static/media/heroBG.b3190b7b.svg": "/static/media/heroBG.b3190b7b.svg",
+    "static/media/img1.4a9a8758.png": "/static/media/img1.4a9a8758.png",
+    "static/media/img10.46d91676.png": "/static/media/img10.46d91676.png",
+    "static/media/img11.bbc340f7.png": "/static/media/img11.bbc340f7.png",
+    "static/media/img12.9d96bd3c.png": "/static/media/img12.9d96bd3c.png",
+    "static/media/img2.7876772f.png": "/static/media/img2.7876772f.png",
+    "static/media/img3.19b52e1e.png": "/static/media/img3.19b52e1e.png",
+    "static/media/img4.a4bf3ea4.png": "/static/media/img4.a4bf3ea4.png",
+    "static/media/img5.d961685f.png": "/static/media/img5.d961685f.png",
+    "static/media/img6.c8010344.png": "/static/media/img6.c8010344.png",
+    "static/media/img7.2e0899a2.png": "/static/media/img7.2e0899a2.png",
+    "static/media/img8.759b4e20.png": "/static/media/img8.759b4e20.png",
+    "static/media/img9.05c8a8af.png": "/static/media/img9.05c8a8af.png",
+    "static/media/logo.f62389b5.png": "/static/media/logo.f62389b5.png",
+    "static/media/planta1.4a664e40.png": "/static/media/planta1.4a664e40.png",
+    "static/media/planta2.b3e2ed24.png": "/static/media/planta2.b3e2ed24.png",
+    "static/media/planta3.e8474e43.png": "/static/media/planta3.e8474e43.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.100c74c2.js",
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.2d6ceed0.chunk.js",
+    "static/css/main.db1a50a3.chunk.css",
+    "static/js/main.359198c2.chunk.js"
+  ]
+}
