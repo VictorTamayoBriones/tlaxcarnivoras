@@ -14,6 +14,7 @@ import Img9 from '../../images/gallery/img9.png';
 import Img10 from '../../images/gallery/img10.png';
 import Img11 from '../../images/gallery/img11.png';
 import Img12 from '../../images/gallery/img12.png';
+import { BtnReturn } from '../../components/BtnReturn';
 
 const Gallery = () => {
 
@@ -25,6 +26,7 @@ const Gallery = () => {
     return (
         <Conatiner>
             <h2>Tlaxcarnivoras</h2>
+            <BtnReturn />
             <Grid>
                 <Row>
                     <Column izquierda >
@@ -64,6 +66,13 @@ const Conatiner = styled.div`
     margin-bottom: 20px;
     @media (max-width: 990px){
         font-size: 30px;
+    }
+    h2{
+        @media (max-width: 600px){
+            font-size: 35px;
+            text-align: right;
+            margin: 5px 12px 5px 0px;
+        }
     }
 `;
 

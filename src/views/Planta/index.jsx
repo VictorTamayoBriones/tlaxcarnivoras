@@ -5,6 +5,7 @@ import { Card, BodyCard, ImageCard, ImageContainer } from '../../components/Card
 import { Button } from '../../components/Buttons';
 import theme from '../../theme';
 import ModalPago from '../../components/ModalPago';
+import { BtnReturn } from '../../components/BtnReturn';
 
 const Planta = () => {
 
@@ -26,6 +27,7 @@ const Planta = () => {
     return (
         <>
         <Container>
+            <BtnReturn />
             <Card>
                 <ImageContainer>
                     <ImageCard src={planta.image} />
