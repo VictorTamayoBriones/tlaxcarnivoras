@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test over the component <Hero/> should show correctly the component 1`] = `
+<styled.div>
+  <styled.div>
+    <h2>
+      Plantas Carnivoras
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia, quas laborum rem velit sunt ipsum est eveniet sint sed aspernatur enim sit nihil facere, magni facilis totam aliquid ratione odio numquam. Distinctio doloribus laborum ullam magnam? Aspernatur in nemo soluta deleniti porro nostrum optio. Magnam esse accusantium vel? Quo.
+    </p>
+    <styled.button
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        }
+      }
+      onClick={[Function]}
+      whileHover={
+        Object {
+          "x": 2,
+          "y": -5,
+        }
+      }
+    >
+      ver mas
+    </styled.button>
+  </styled.div>
+  <ForwardRef(MotionComponent)
+    alt="Tlaxcarnivoras"
+    animate={
+      Object {
+        "x": 0,
+      }
+    }
+    initial={
+      Object {
+        "x": 1000,
+      }
+    }
+    src="logo.png"
+    title="Tlaxcarnivoras"
+    transition={
+      Object {
+        "damping": 40,
+        "delay": 0.5,
+        "stiffness": 280,
+        "type": "spring",
+      }
+    }
+  />
+</styled.div>
+`;
